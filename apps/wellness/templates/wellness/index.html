@@ -1,0 +1,800 @@
+{% extends "base.html" %}
+{% load static custom_filters %}
+
+{% block meta_title %}WHOLECAKE Wellness Division | Managed Menstrual Hygiene Products For The Workplace{% endblock %}
+{% block meta_description %}WHOLECAKE Wellness Division provides controlled, accountable access to essential menstrual hygiene products in South African workplaces. Monthly allocations, usage tracking and reporting included. Request a consultation.{% endblock %}
+{% block og_title %}WHOLECAKE Wellness Division | Workplace Menstrual Hygiene Solutions{% endblock %}
+{% block og_description %}A managed distribution programme that helps South African employers support female employee wellbeing with measurable accountability and reporting.{% endblock %}
+
+{% block content %}
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section class="relative overflow-hidden bg-brand-900">
+  <div class="absolute inset-0 bg-linear-to-br from-brand-800 via-brand-900 to-gray-900"></div>
+  <div class="absolute inset-0 opacity-5"
+       style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 64px 64px;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 xl:py-40">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 bg-brand-800/60 border border-brand-700/60 text-brand-200 text-xs font-semibold px-4 py-2 rounded-full mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
+        WHOLECAKE Wellness Division
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-7">
+        Providing Reliable Access To Essential Menstrual Hygiene Products In The Workplace
+      </h1>
+
+      <p class="text-lg sm:text-xl text-brand-100 leading-relaxed mb-10 max-w-2xl">
+        A managed workplace solution that helps employers support female employee wellbeing through
+        controlled distribution, accountability and reporting.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#consultation" class="btn-primary text-base py-4 px-8 shadow-xl shadow-brand-950/40">
+          Request A Consultation
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+        <a href="#solution" class="btn-outline-white text-base py-4 px-8">
+          Learn How It Works
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 2 — TRUST INDICATORS
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="trust" class="bg-gray-50 border-b border-gray-200 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+        <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">South African Business</div>
+          <div class="text-xs text-gray-500 mt-0.5">Proudly local, nationally focused</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+        <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Female Employee Focused</div>
+          <div class="text-xs text-gray-500 mt-0.5">Designed around real workplace needs</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+        <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Managed Distribution</div>
+          <div class="text-xs text-gray-500 mt-0.5">Controlled allocations, zero guesswork</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+        <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Reporting &amp; Accountability</div>
+          <div class="text-xs text-gray-500 mt-0.5">Measurable insights for decision makers</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 3 — THE WORKPLACE CHALLENGE
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="challenge" class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="section-label">The Problem</span>
+      <h2 class="section-heading mb-5">The Workplace Challenge</h2>
+      <p class="section-subheading mx-auto">
+        Without a structured programme, managing menstrual hygiene in the workplace creates
+        challenges at every level of the organisation.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-lg transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-rose-50 flex items-center justify-center mb-6 group-hover:bg-rose-100 transition-colors">
+          <svg class="w-7 h-7 text-rose-500" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+          </svg>
+        </div>
+        <div class="text-xs font-bold text-rose-500 uppercase tracking-widest mb-3">Female Employees</div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Dignity &amp; Comfort At Risk</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Unexpected need during working hours can impact comfort, confidence and productivity.
+          Without a reliable in-house solution, employees are left to manage this alone.
+        </p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-lg transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center mb-6 group-hover:bg-amber-100 transition-colors">
+          <svg class="w-7 h-7 text-amber-500" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
+          </svg>
+        </div>
+        <div class="text-xs font-bold text-amber-500 uppercase tracking-widest mb-3">HR Teams</div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Inconsistent Manual Management</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Manual distribution is difficult to manage consistently across large or distributed
+          teams. There's no easy way to track who received what, or when replenishment is needed.
+        </p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-lg transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
+          <svg class="w-7 h-7 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/>
+          </svg>
+        </div>
+        <div class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-3">Employers</div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">No Visibility Or Accountability</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Limited visibility into product usage, stock levels and programme effectiveness
+          makes it impossible to measure impact, control costs or justify the investment.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 4 — THE WHOLECAKE SOLUTION (Process)
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="solution" class="bg-brand-50 py-20 lg:py-28 border-y border-brand-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-heading mb-5">The WHOLECAKE Solution</h2>
+      <p class="section-subheading mx-auto">
+        A structured, end-to-end programme that removes guesswork and gives every stakeholder
+        exactly what they need.
+      </p>
+    </div>
+
+    <!-- Process steps -->
+    <div class="relative">
+      <!-- Connecting line — desktop -->
+      <div class="hidden lg:block absolute top-10 left-[9%] right-[9%] h-0.5 bg-brand-200 z-0"></div>
+
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-5 gap-4">
+
+        {% for step in steps %}{% empty %}
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center px-2">
+          <div class="w-20 h-20 rounded-full bg-brand-700 text-white flex items-center justify-center font-black text-2xl mb-5 shadow-lg shadow-brand-700/30 ring-4 ring-brand-50">
+            1
+          </div>
+          <h4 class="font-bold text-gray-900 mb-2">Employee Registered</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Employees are enrolled and their details captured in the system</p>
+          <div class="lg:hidden mt-5 text-brand-300">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center px-2">
+          <div class="w-20 h-20 rounded-full bg-brand-700 text-white flex items-center justify-center font-black text-2xl mb-5 shadow-lg shadow-brand-700/30 ring-4 ring-brand-50">
+            2
+          </div>
+          <h4 class="font-bold text-gray-900 mb-2">Monthly Allocation Assigned</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Each employee receives a defined monthly product allocation</p>
+          <div class="lg:hidden mt-5 text-brand-300">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center px-2">
+          <div class="w-20 h-20 rounded-full bg-brand-800 text-white flex items-center justify-center font-black text-2xl mb-5 shadow-xl shadow-brand-800/30 ring-4 ring-brand-50">
+            3
+          </div>
+          <h4 class="font-bold text-gray-900 mb-2">Secure Product Access</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Products are accessed through a controlled, authenticated process</p>
+          <div class="lg:hidden mt-5 text-brand-300">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center text-center px-2">
+          <div class="w-20 h-20 rounded-full bg-brand-700 text-white flex items-center justify-center font-black text-2xl mb-5 shadow-lg shadow-brand-700/30 ring-4 ring-brand-50">
+            4
+          </div>
+          <h4 class="font-bold text-gray-900 mb-2">Usage Recorded</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Every access event is logged automatically for accurate tracking</p>
+          <div class="lg:hidden mt-5 text-brand-300">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="flex flex-col items-center text-center px-2">
+          <div class="w-20 h-20 rounded-full bg-brand-700 text-white flex items-center justify-center font-black text-2xl mb-5 shadow-lg shadow-brand-700/30 ring-4 ring-brand-50">
+            5
+          </div>
+          <h4 class="font-bold text-gray-900 mb-2">Reporting Generated</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Employers receive regular reports on usage, stock and programme performance</p>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <div class="text-center mt-14">
+      <a href="#consultation" class="btn-primary text-base py-4 px-8">
+        Request A Consultation
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 5 — PRODUCT SHOWCASE
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="products" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="section-label">The Product</span>
+      <h2 class="section-heading mb-5">WHOLECAKE Wellness Packs</h2>
+      <p class="section-subheading mx-auto">
+        Professionally packaged, branded menstrual hygiene packs designed for dignified
+        workplace distribution.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="aspect-[4/3] bg-brand-50 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-brand-200 p-8 text-center">
+        <div class="w-14 h-14 rounded-full bg-brand-100 flex items-center justify-center mb-4">
+          <svg class="w-7 h-7 text-brand-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+          </svg>
+        </div>
+        <p class="text-sm font-semibold text-brand-600">Branded Wellness Pack</p>
+        <p class="text-xs text-brand-400 mt-1">Product photography coming soon</p>
+      </div>
+
+      <div class="aspect-[4/3] bg-brand-50 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-brand-200 p-8 text-center">
+        <div class="w-14 h-14 rounded-full bg-brand-100 flex items-center justify-center mb-4">
+          <svg class="w-7 h-7 text-brand-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+          </svg>
+        </div>
+        <p class="text-sm font-semibold text-brand-600">Pack Contents</p>
+        <p class="text-xs text-brand-400 mt-1">Product photography coming soon</p>
+      </div>
+
+      <div class="aspect-[4/3] bg-brand-50 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-brand-200 p-8 text-center sm:col-span-2 lg:col-span-1">
+        <div class="w-14 h-14 rounded-full bg-brand-100 flex items-center justify-center mb-4">
+          <svg class="w-7 h-7 text-brand-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+          </svg>
+        </div>
+        <p class="text-sm font-semibold text-brand-600">Corporate Environment</p>
+        <p class="text-xs text-brand-400 mt-1">Product photography coming soon</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 6 — BENEFITS
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="benefits" class="bg-gray-50 py-20 lg:py-28 border-y border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="section-label">Why Choose WHOLECAKE</span>
+      <h2 class="section-heading mb-5">Built For Modern Workplaces</h2>
+      <p class="section-subheading mx-auto">
+        A programme designed with the needs of HR teams, operations managers and employers in mind —
+        and the dignity of every female employee at its core.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-md transition-all duration-300">
+        <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center mb-5 group-hover:bg-brand-100 transition-colors">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Female Employee Wellbeing</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Supports dignity, comfort and workplace inclusion. Ensures every registered female
+          employee has reliable, private access to essential products when they need them most.
+        </p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-md transition-all duration-300">
+        <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center mb-5 group-hover:bg-brand-100 transition-colors">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Controlled Distribution</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Monthly allocations prevent misuse and overconsumption. Products are distributed
+          through a structured process that is fair, consistent and documented.
+        </p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-md transition-all duration-300">
+        <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center mb-5 group-hover:bg-brand-100 transition-colors">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Reporting &amp; Visibility</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Provides measurable insights and full accountability. HR teams and management
+          receive regular reports on usage patterns, stock levels and programme performance.
+        </p>
+      </div>
+
+      <div class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-brand-200 hover:shadow-md transition-all duration-300">
+        <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center mb-5 group-hover:bg-brand-100 transition-colors">
+          <svg class="w-6 h-6 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Scalable Programme</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Suitable for offices, factories and large workforce environments. The programme
+          scales with your organisation — from 50 employees to thousands, across single
+          or multiple sites.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 7 — TECHNOLOGY & DISTRIBUTION SYSTEM
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="technology" class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+      <!-- Text content -->
+      <div>
+        <span class="section-label">The System</span>
+        <h2 class="section-heading mb-5">Technology-Driven Distribution</h2>
+        <p class="text-gray-500 leading-relaxed mb-10 text-[1.0625rem]">
+          WHOLECAKE uses a purpose-built distribution and tracking system that gives
+          employers complete control and visibility over the programme — without adding
+          complexity to their operations.
+        </p>
+
+        <div class="space-y-7">
+
+          <div class="flex gap-5">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1.5">Controlled Access</h4>
+              <p class="text-sm text-gray-500 leading-relaxed">Products are accessed through an authenticated process — ensuring only registered employees can collect their allocation.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1.5">Monthly Allocations</h4>
+              <p class="text-sm text-gray-500 leading-relaxed">Each employee is assigned a set monthly allocation. Allocations reset automatically each month and can be customised per client or site.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1.5">Usage Tracking &amp; Reporting</h4>
+              <p class="text-sm text-gray-500 leading-relaxed">Every transaction is recorded. Employers receive structured reports including usage summaries, allocation vs collection data and trends over time.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1.5">Managed Replenishment</h4>
+              <p class="text-sm text-gray-500 leading-relaxed">Stock levels are monitored continuously. Replenishment is handled proactively — employers are never left with an empty programme.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Visual summary card -->
+      <div class="bg-brand-50 rounded-2xl p-8 lg:p-10 border border-brand-100 sticky top-24">
+        <h3 class="text-lg font-bold text-gray-900 mb-7">Programme At A Glance</h3>
+        <div class="space-y-5">
+          {% for item in programme_items %}{% empty %}
+          {% for row in "Employee Registration,Monthly Allocations,Secure Access Control,Usage Logging,Automated Reporting,Stock Monitoring,Replenishment Management,Customisable Limits"|split:"," %}
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-full bg-brand-700 flex items-center justify-center shrink-0">
+              <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-gray-700">{{ row }}</span>
+          </div>
+          {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="mt-8 pt-7 border-t border-brand-200">
+          <a href="#consultation" class="btn-primary w-full justify-center text-sm py-3.5">
+            Discuss Your Requirements
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 8 — FOUNDER
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="founder" class="bg-gray-50 py-20 lg:py-28 border-y border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Founder photo placeholder -->
+      <div class="flex justify-center lg:justify-start">
+        <div class="w-full max-w-sm aspect-[3/4] bg-brand-100 rounded-2xl flex flex-col items-center justify-center border border-brand-200 text-center p-10">
+          <div class="w-20 h-20 rounded-full bg-brand-200 flex items-center justify-center mb-5">
+            <svg class="w-10 h-10 text-brand-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+            </svg>
+          </div>
+          <p class="text-sm font-semibold text-brand-500">Founder Portrait</p>
+          <p class="text-xs text-brand-400 mt-1">Photography to be added</p>
+        </div>
+      </div>
+
+      <!-- Founder text -->
+      <div>
+        <span class="section-label">About The Founder</span>
+        <h2 class="section-heading mb-7">
+          A Problem Worth Solving
+        </h2>
+        <div class="space-y-5 text-gray-600 leading-relaxed text-[1.0625rem]">
+          <p>
+            WHOLECAKE GROUP was founded on a simple but powerful observation: the modern workplace
+            has evolved significantly in how it approaches employee wellbeing — yet one fundamental
+            need for millions of female employees continues to be overlooked. The founder set out
+            to change that with a practical, scalable and professionally managed solution.
+          </p>
+          <p>
+            Having observed the challenge firsthand across various corporate environments, the
+            vision was clear — create a programme that removes the awkwardness, inconsistency
+            and administrative burden from this often sensitive topic, and replace it with
+            something dignified, accountable and easy for any organisation to implement.
+          </p>
+          <p>
+            Today, WHOLECAKE Wellness Division represents the first step in a broader mission
+            to build practical employee wellbeing solutions that make a real difference — not
+            just on paper, but in the daily experience of the people who matter most.
+          </p>
+        </div>
+        <div class="mt-8">
+          <a href="{% url 'core:about' %}" class="inline-flex items-center gap-2 text-brand-700 font-semibold hover:text-brand-800 transition-colors text-sm">
+            Learn more about WHOLECAKE GROUP
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 9 — FAQ
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="faq" class="py-20 lg:py-28">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-heading mb-5">Frequently Asked Questions</h2>
+      <p class="section-subheading mx-auto">
+        Common questions from HR managers and decision makers about the WHOLECAKE Wellness programme.
+      </p>
+    </div>
+
+    <div class="space-y-3">
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">How does the monthly allocation work?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          Each registered female employee receives a defined monthly product allocation. This allocation resets at the beginning of each month. Employees can only collect up to their allocated amount — preventing overconsumption while ensuring consistent access throughout the month.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">Can monthly limits be customised for our organisation?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          Yes. Allocation limits are fully customisable. During onboarding, we work with you to set allocation levels that make sense for your workforce size, budget and requirements. Limits can be adjusted over time as the programme matures.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">How does replenishment work?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          Stock levels are monitored continuously. WHOLECAKE manages the replenishment process proactively — when stock reaches a defined threshold, a replenishment order is initiated. Employers are notified and never left with an empty programme.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">Is reporting included in the programme?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          Yes. Reporting is a core feature of the WHOLECAKE programme. Employers receive regular reports covering usage summaries, allocation vs collection data, stock levels and programme trends. Reports can be used for ESG reporting, HR performance reviews and budget planning.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">Can the programme scale across multiple sites?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          Yes. The programme is designed to scale across multiple locations. Each site can have its own stock point, allocation settings and reporting. Central management retains visibility across all sites via consolidated reporting.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">How are employees authenticated when accessing products?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          The authentication process is discussed and confirmed during the consultation and onboarding phase, and is designed to be simple, private and easy to use for employees. Our goal is to ensure the process is dignified and does not create unnecessary friction for employees needing access.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none list-none">
+          <span class="font-semibold text-gray-900 pr-6">Can usage limits be adjusted after the programme launches?</span>
+          <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-100 pt-4 text-sm">
+          Yes. Usage limits can be reviewed and adjusted at any time. WHOLECAKE works collaboratively with each client — if reporting shows that current limits are too low or too high, we adjust accordingly to optimise the programme for your specific workforce.
+        </div>
+      </details>
+
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-gray-500 text-sm mb-4">Have a question not covered above?</p>
+      <a href="{% url 'core:home' %}#contact" class="inline-flex items-center gap-2 text-brand-700 font-semibold hover:text-brand-800 transition-colors">
+        Contact our team
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SECTION 10 — LEAD GENERATION FORM
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section id="consultation" class="bg-brand-900 py-20 lg:py-28 relative overflow-hidden">
+  <div class="absolute inset-0 bg-linear-to-br from-brand-800 to-brand-900"></div>
+  <div class="absolute inset-0 opacity-5"
+       style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 64px 64px;"></div>
+
+  <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-10">
+      <span class="inline-block text-xs font-bold text-brand-300 uppercase tracking-widest mb-3">Request A Consultation</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight mb-5">
+        Let's Discuss Your Female Employee Wellness Requirements
+      </h2>
+      <p class="text-brand-200 text-lg leading-relaxed">
+        Complete the form below and a WHOLECAKE consultant will be in touch within one business day.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-8 lg:p-10 shadow-2xl">
+
+      {% if consultation_form.non_field_errors %}
+      <div class="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-600">
+        {{ consultation_form.non_field_errors }}
+      </div>
+      {% endif %}
+
+      <form method="post" action="{% url 'wellness:index' %}#consultation" novalidate>
+        {% csrf_token %}
+        {{ consultation_form.website_url }}
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+          <!-- Name -->
+          <div>
+            <label for="{{ consultation_form.name.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Full Name <span class="text-red-500">*</span>
+            </label>
+            {{ consultation_form.name }}
+            {% if consultation_form.name.errors %}
+            <p class="mt-1.5 text-xs text-red-500">{{ consultation_form.name.errors.0 }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Company -->
+          <div>
+            <label for="{{ consultation_form.company.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Company Name <span class="text-red-500">*</span>
+            </label>
+            {{ consultation_form.company }}
+            {% if consultation_form.company.errors %}
+            <p class="mt-1.5 text-xs text-red-500">{{ consultation_form.company.errors.0 }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="{{ consultation_form.email.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Work Email <span class="text-red-500">*</span>
+            </label>
+            {{ consultation_form.email }}
+            {% if consultation_form.email.errors %}
+            <p class="mt-1.5 text-xs text-red-500">{{ consultation_form.email.errors.0 }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="{{ consultation_form.phone.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Phone Number <span class="text-red-500">*</span>
+            </label>
+            {{ consultation_form.phone }}
+            {% if consultation_form.phone.errors %}
+            <p class="mt-1.5 text-xs text-red-500">{{ consultation_form.phone.errors.0 }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Total employees -->
+          <div>
+            <label for="{{ consultation_form.num_employees.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Total Employees <span class="text-red-500">*</span>
+            </label>
+            {{ consultation_form.num_employees }}
+            {% if consultation_form.num_employees.errors %}
+            <p class="mt-1.5 text-xs text-red-500">{{ consultation_form.num_employees.errors.0 }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Female employees -->
+          <div>
+            <label for="{{ consultation_form.num_female_employees.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Female Employees <span class="text-red-500">*</span>
+            </label>
+            {{ consultation_form.num_female_employees }}
+            {% if consultation_form.num_female_employees.errors %}
+            <p class="mt-1.5 text-xs text-red-500">{{ consultation_form.num_female_employees.errors.0 }}</p>
+            {% endif %}
+          </div>
+
+          <!-- Message -->
+          <div class="sm:col-span-2">
+            <label for="{{ consultation_form.message.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
+              Additional Notes <span class="text-gray-400 font-normal">(Optional)</span>
+            </label>
+            {{ consultation_form.message }}
+          </div>
+
+        </div>
+
+        <button type="submit"
+                class="w-full mt-7 btn-primary justify-center text-base py-4 shadow-lg shadow-brand-900/20">
+          Request Consultation
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </button>
+
+        <p class="text-xs text-gray-400 text-center mt-4 leading-relaxed">
+          By submitting this form you agree to be contacted by a WHOLECAKE consultant regarding
+          your enquiry. We respect your privacy and will not share your information with third parties.
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+
+  <title>{% block meta_title %}WHOLECAKE GROUP | Female Employee Wellness Solutions{% endblock %}</title>
+  <meta name="description" content="{% block meta_description %}WHOLECAKE GROUP provides managed menstrual hygiene product solutions for South African workplaces — supporting female employee dignity, wellbeing and workplace inclusion.{% endblock %}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WHOLECAKE GROUP">
+  <meta property="og:title" content="{% block og_title %}WHOLECAKE GROUP | Female Employee Wellness Solutions{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}Supporting female employee wellbeing through managed access to essential menstrual hygiene products in the workplace.{% endblock %}">
+  <meta property="og:url" content="{{ request.build_absolute_uri }}">
+  <meta property="og:locale" content="en_ZA">
+  {% block og_image %}<meta property="og:image" content="{% static 'img/og-default.jpg' %}">{% endblock %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% block twitter_title %}WHOLECAKE GROUP{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_desc %}Female employee wellness solutions for the modern workplace.{% endblock %}">
+
+  <link rel="canonical" href="{{ request.build_absolute_uri }}">
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  {% tailwind_css %}
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+  {% include "partials/navbar.html" %}
+
+  {% if messages %}
+  <div class="fixed top-20 right-4 z-50 space-y-2 max-w-sm w-full">
+    {% for message in messages %}
+    <div class="flex items-start gap-3 px-5 py-4 rounded-xl shadow-lg text-sm font-medium
+      {% if message.tags == 'error' %}bg-red-500 text-white{% else %}bg-green-500 text-white{% endif %}">
+      <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        {% if message.tags == 'error' %}
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"/>
+        {% else %}
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        {% endif %}
+      </svg>
+      <span>{{ message }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <main class="flex-1">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include "partials/footer.html" %}
+
+  {% block extra_scripts %}{% endblock %}
+
+  {% if GA_ID %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_ID }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ GA_ID }}');
+  </script>
+  {% endif %}
+</body>
+</html>
