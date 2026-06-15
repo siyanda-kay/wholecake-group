@@ -1,156 +1,134 @@
 {% extends "base.html" %}
 {% load static custom_filters %}
 
-{% block meta_title %}WHOLECAKE GROUP | Female Employee Wellness Solutions For The Modern Workplace{% endblock %}
-{% block meta_description %}WHOLECAKE GROUP delivers managed access to essential menstrual hygiene products in South African workplaces. Request a consultation today.{% endblock %}
+{% block meta_title %}WHOLECAKE GROUP | Female Employee Wellness Solutions{% endblock %}
+{% block meta_description %}Supporting employee dignity, wellbeing and workplace inclusion through managed access to essential menstrual hygiene products.{% endblock %}
+
+{% block body_class %}page-dark-hero home-links-disabled{% endblock %}
+{% block main_class %}{% endblock %}
+{% block extra_head %}
+<style>
+  body.home-links-disabled a,
+  body.home-links-disabled button {
+    pointer-events: none;
+    cursor: default !important;
+  }
+  body.home-links-disabled a {
+    text-decoration: none;
+  }
+  body.home-links-disabled #mobile-menu {
+    display: none !important;
+  }
+</style>
+{% endblock %}
 
 {% block content %}
 
-<!-- ─── HERO ─────────────────────────────────────────────────────────── -->
-<section class="relative overflow-hidden bg-brand-900 min-h-screen flex items-center">
-  <!-- Background gradient -->
-  <div class="absolute inset-0 bg-linear-to-br from-brand-800 via-brand-900 to-gray-900"></div>
-  <!-- Decorative grid overlay -->
-  <div class="absolute inset-0 opacity-5"
-       style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 64px 64px;"></div>
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<section class="relative overflow-hidden bg-[#0a0f1e] pt-[4.5rem] pb-10 sm:pt-20 sm:pb-10">
+  <!-- Background image -->
+  <div class="absolute inset-0 z-0 bg-cover bg-[center_right_30%] sm:bg-center opacity-[0.52]" style="background-image:url('https://ik.imagekit.io/ek7drjowu/wellness%20hero.jpg');"></div>
+  <!-- Radial colour gradient -->
+  <div class="absolute inset-0 z-0 bg-[radial-gradient(ellipse_70%_90%_at_88%_40%,rgba(124,58,237,.92)_0%,rgba(37,99,235,.82)_28%,rgba(236,72,153,.65)_52%,rgba(251,146,60,.70)_72%,transparent_100%)]"></div>
+  <!-- Left-side dark overlay -->
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(10,15,30,.94)_0%,rgba(10,15,30,.82)_26%,rgba(10,15,30,.4)_50%,transparent_72%)]"></div>
+  <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,15,30,.18)_0%,rgba(10,15,30,.34)_55%,rgba(10,15,30,.58)_100%)]"></div>
 
-  <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 bg-brand-800/60 text-brand-200 text-xs font-semibold px-4 py-2 rounded-full mb-8 border border-brand-700/60 backdrop-blur-sm">
-        <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
-        WHOLECAKE Wellness Division — Now Available
-      </div>
+  <div class="relative z-10 max-w-300 mx-auto px-5 sm:px-6 lg:px-8 pb-2 md:pb-6">
 
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight tracking-tight mb-6">
-        Female Employee Wellness Solutions For The Modern Workplace
+    <!-- Left: copy -->
+    <div class="pt-18 pb-14 sm:py-10 md:py-14 flex flex-col justify-end sm:justify-center max-w-[640px] min-h-[500px] sm:min-h-[380px] md:min-h-[420px]">
+      <h1 class="text-[clamp(32px,7vw,60px)] font-extrabold tracking-[-1.4px] sm:tracking-[-2px] leading-[1.06] max-w-[640px] mb-6 mt-0">
+        <span class="text-white block">Female Employee<br>Wellness Solutions</span>
+        <span class="text-white/35 block">for the modern workplace.</span>
       </h1>
-
-      <p class="text-lg sm:text-xl text-brand-100 leading-relaxed mb-10 max-w-2xl">
-        Supporting employee dignity, wellbeing and workplace inclusion through managed access to essential menstrual hygiene products.
-      </p>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="{% url 'wellness:index' %}#consultation" class="btn-primary text-base py-4 px-8 shadow-lg shadow-brand-900/30">
+      <div class="flex flex-col items-start sm:flex-row sm:items-center gap-3 sm:gap-4">
+        <a href="{% url 'wellness:index' %}#consultation"
+           class="inline-flex w-[238px] sm:w-auto justify-center items-center gap-2 bg-brand-600 text-white text-[15px] font-semibold py-[9px] px-[18px] rounded-full no-underline transition-all duration-150 hover:bg-brand-700 hover:-translate-y-px">
           Request A Consultation
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-          </svg>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </a>
-        <a href="{% url 'wellness:index' %}" class="btn-outline-white text-base py-4 px-8">
+        <a href="{% url 'wellness:index' %}"
+           class="inline-flex w-[238px] sm:w-auto justify-center items-center gap-2 bg-white/6 text-white/85 text-[15px] font-medium py-[9px] px-[18px] rounded-full no-underline border border-white/20 transition-all duration-150 hover:bg-white/12 hover:text-white hover:-translate-y-px">
           Learn More
         </a>
       </div>
+    </div>
 
-      <!-- Quick trust signals -->
-      <div class="flex flex-wrap items-center gap-6 mt-14 pt-10 border-t border-white/10">
-        {% for item in "SA Based,HR-Ready Solution,Managed Distribution,Reporting Included"|split:"," %}
-        <div class="flex items-center gap-2 text-brand-200 text-sm font-medium">
-          <svg class="w-4 h-4 text-brand-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+  </div>
+</section>
+
+<section class="px-5 py-8 sm:px-6 sm:py-9 lg:px-8 text-[15px] font-semibold bg-white">
+  <div class="max-w-300 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <div class="bg-[#f8fafc] sm:bg-white rounded-2xl p-6 flex flex-col gap-5">
+        <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+            <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>
           </svg>
-          {{ item }}
         </div>
-        {% endfor %}
+        <h3 class="text-[17px] font-semibold text-gray-900 leading-snug">
+          Support HR &amp; wellness teams
+        </h3>
+      </div>
+
+      <div class="bg-[#f8fafc] sm:bg-white rounded-2xl p-6 flex flex-col gap-5">
+        <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+            <path d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+          </svg>
+        </div>
+        <h3 class="text-[17px] font-semibold text-gray-900 leading-snug">
+          Equip modern corporate offices
+        </h3>
+      </div>
+
+      <div class="bg-[#f8fafc] sm:bg-white rounded-2xl p-6 flex flex-col gap-5">
+        <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+            <path d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+          </svg>
+        </div>
+        <h3 class="text-[17px] font-semibold text-gray-900 leading-snug">
+          Serve industrial &amp; factory teams
+        </h3>
+      </div>
+
+      <div class="bg-brand-600 rounded-2xl p-6 flex flex-col gap-5">
+        <div class="w-12 h-12 rounded-full bg-white text-brand-600 flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+            <path d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/>
+          </svg>
+        </div>
+        <h3 class="text-[17px] font-semibold text-white leading-snug">
+          Strengthen ESG &amp; inclusion goals
+        </h3>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── ABOUT ─────────────────────────────────────────────────────────── -->
-<section id="about" class="py-20 lg:py-28">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-      <!-- Text -->
+<section class="px-5 py-8 sm:px-6 sm:py-9 lg:px-8 lg:py-10">
+  <div class="max-w-300 mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-[72px] items-center">
+
       <div>
-        <span class="section-label">About WHOLECAKE GROUP</span>
-        <h2 class="section-heading mb-6">
-          Practical Business Solutions. Real Workplace Impact.
-        </h2>
-        <div class="space-y-5 text-gray-600 leading-relaxed text-[1.0625rem]">
-          <p>
-            WHOLECAKE GROUP was established to address a practical, often overlooked need within South African
-            workplaces — ensuring that female employees have consistent, dignified access to essential menstrual
-            hygiene products. We believe that employee wellbeing extends far beyond remuneration and benefits packages.
-          </p>
-          <p>
-            When female employees have reliable access to essential hygiene products at work, it directly impacts
-            their comfort, confidence and productivity — and by extension, the performance of the business.
-            Our mission is to help organisations create workplaces where every employee feels supported.
-          </p>
-          <p>
-            WHOLECAKE GROUP exists to bridge this gap through practical, manageable solutions that integrate
-            seamlessly into existing HR and facilities management frameworks. Our goal is to build long-term
-            partnerships with organisations committed to meaningful, measurable employee wellbeing.
-          </p>
-        </div>
+        <h2 class="text-[clamp(28px,3.2vw,42px)] font-extrabold tracking-[-1.2px] leading-[1.1] mb-5">Practical solutions for real workplace challenges</h2>
+        <p class="text-[16px] text-slate-500 leading-[1.75] mb-4">WHOLECAKE GROUP was founded with a clear purpose: to solve the workplace challenges that most organisations overlook. We build practical, scalable programmes that create measurable impact for employers and the employees they serve.</p>
+        <p class="text-[16px] text-slate-500 leading-[1.75] mb-4">Our flagship initiative, the WHOLECAKE Wellness Division, addresses a daily reality for millions of female employees, ensuring dignity, comfort and inclusion are never an afterthought in the workplace.</p>
+        <p class="text-[16px] text-slate-500 leading-[1.75] mb-[30px]">We partner with HR, facilities and ESG teams to implement programmes that are accountable, reportable and built for the long term.</p>
+        <a href="{% url 'wellness:index' %}"
+           class="inline-flex items-center gap-2 bg-brand-600 text-white text-[15px] font-semibold py-[9px] px-[18px] rounded-full no-underline transition-all duration-150 hover:bg-brand-700 hover:-translate-y-px">
+          Explore The Solution
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
       </div>
 
-      <!-- Accent card -->
       <div class="relative">
-        <div class="bg-brand-50 rounded-2xl p-10 border border-brand-100">
-          <div class="space-y-8">
-            {% for stat in stats %}
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                </svg>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">{{ stat.title }}</div>
-                <div class="text-sm text-gray-500 mt-0.5">{{ stat.desc }}</div>
-              </div>
-            </div>
-            {% empty %}
-            {% for item in pillars %}
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                </svg>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">{{ item }}</div>
-              </div>
-            </div>
-            {% endfor %}
-            {% endfor %}
-            <!-- Inline fallback pillars -->
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                </svg>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">Practical Business Solutions</div>
-                <div class="text-sm text-gray-500 mt-0.5">Designed to fit seamlessly into HR frameworks</div>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                </svg>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">Measurable Workplace Impact</div>
-                <div class="text-sm text-gray-500 mt-0.5">Reporting and accountability built in from day one</div>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                </svg>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">Long-Term Partnerships</div>
-                <div class="text-sm text-gray-500 mt-0.5">Built for ongoing, scalable corporate relationships</div>
-              </div>
-            </div>
-          </div>
+        <div class="rounded-[18px] overflow-hidden aspect-[4/3] shadow-[0_20px_50px_rgba(15,23,42,.12)] md:max-w-[34rem] lg:max-w-none">
+          <img src="https://ik.imagekit.io/ek7drjowu/pexels-cottonbro-7130218.jpg" alt="Professional team in a modern workplace" class="w-full h-full object-cover block">
         </div>
       </div>
 
@@ -158,194 +136,225 @@
   </div>
 </section>
 
-<!-- ─── WELLNESS DIVISION INTRO ──────────────────────────────────────── -->
-<section id="wellness" class="bg-gray-50 py-20 lg:py-28 border-y border-gray-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto text-center mb-14">
-      <span class="section-label">WHOLECAKE Wellness Division</span>
-      <h2 class="section-heading mb-5">
-        Supporting Female Employees Through Practical Workplace Solutions
-      </h2>
-      <p class="section-subheading mx-auto">
-        A managed programme that gives employers a structured, accountable way to provide
-        essential menstrual hygiene products to their female workforce — with full visibility
-        into distribution, usage and replenishment.
-      </p>
+<!-- ══ PROCESS ═══════════════════════════════════════════════ -->
+<div class="relative" style="overflow-x:clip; overflow-y:visible;">
+  <div class="absolute inset-x-0 -top-28 -bottom-28 pointer-events-none">
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(247,249,252,0) 0%, rgba(239,246,255,.18) 22%, rgba(233,243,255,.26) 50%, rgba(239,246,255,.18) 78%, rgba(247,249,252,0) 100%);"></div>
+    <div class="absolute inset-x-0 top-[6%] h-[38%] opacity-18" style="background:radial-gradient(circle at 50% 20%, rgba(191,219,254,.14) 0%, rgba(191,219,254,.04) 36%, rgba(247,249,252,0) 76%);"></div>
+    <div class="absolute left-1/2 -translate-x-1/2 bottom-[-32rem] w-[118rem] h-[118rem] opacity-[0.20]" style="background:repeating-conic-gradient(from 180deg at 50% 50%, rgba(37,99,235,.20) 0deg, rgba(37,99,235,.20) .24deg, rgba(37,99,235,0) .24deg, rgba(37,99,235,0) 2deg, rgba(96,165,250,.10) 2deg, rgba(96,165,250,.10) 2.18deg, rgba(96,165,250,0) 2.18deg, rgba(96,165,250,0) 4deg); clip-path: ellipse(46% 48% at 50% 50%);"></div>
+    <div class="absolute left-1/2 -translate-x-1/2 bottom-[-10rem] w-[60rem] h-[24rem] opacity-[0.22] blur-3xl" style="background:radial-gradient(ellipse at center, rgba(96,165,250,.56) 0%, rgba(191,219,254,.22) 42%, rgba(191,219,254,0) 78%);"></div>
+  </div>
+  <section class="relative py-10 px-5 sm:px-6 lg:py-[4.5rem] lg:px-8 bg-transparent" id="solution">
+    <div class="relative z-[1] max-w-300 mx-auto">
+
+    <div class="text-center max-w-[640px] mx-auto mb-10 sm:mb-12 lg:mb-[60px]">
+      <h2 class="text-[clamp(28px,3.2vw,42px)] font-extrabold tracking-[-1.2px] leading-[1.1] mb-4">A managed programme from registration to reporting</h2>
+      <p class="text-[17px] text-slate-500">Every step is handled automatically and tracked end-to-end, so your team gets dignity for employees and visibility for leadership, without the manual effort.</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-14">
-      {% for card in "The Challenge,The Solution,The Outcome"|split:"," %}
-      {% if forloop.counter == 1 %}
-      <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-        <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-5">
-          <svg class="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
-          </svg>
+    <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-0">
+      <!-- Connecting line (desktop only) -->
+      <div class="hidden lg:block absolute top-8 left-[12%] right-[12%] h-[2px] bg-[#eff6ff] z-0"></div>
+
+      <div class="text-center px-2 sm:px-[14px] max-w-[22rem] mx-auto">
+        <div class="w-16 h-16 mx-auto mb-[18px] rounded-full bg-white border-2 border-[#eff6ff] flex items-center justify-center relative z-[2] shadow-[0_6px_18px_rgba(37,99,235,.10)]">
+          <svg class="w-[26px] h-[26px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
         </div>
-        <h3 class="font-bold text-gray-900 text-lg mb-3">The Challenge</h3>
-        <p class="text-gray-500 text-sm leading-relaxed">Female employees often face unexpected need during working hours, impacting comfort, confidence and productivity without a structured workplace solution.</p>
+        <div class="text-[11px] font-bold text-brand-600 tracking-[.1em] mb-[6px]">STEP 01</div>
+        <h4 class="text-[14px] font-bold mb-[6px]">Employee Registered</h4>
+        <p class="text-[12.5px] text-slate-500 leading-[1.5]">Female employees are securely enrolled into the programme.</p>
       </div>
-      {% elif forloop.counter == 2 %}
-      <div class="bg-brand-700 rounded-2xl p-8 shadow-sm">
-        <div class="w-12 h-12 rounded-xl bg-brand-600 flex items-center justify-center mb-5">
-          <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
-          </svg>
+
+      <div class="text-center px-2 sm:px-[14px] max-w-[22rem] mx-auto">
+        <div class="w-16 h-16 mx-auto mb-[18px] rounded-full bg-white border-2 border-[#eff6ff] flex items-center justify-center relative z-[2] shadow-[0_6px_18px_rgba(37,99,235,.10)]">
+          <svg class="w-[26px] h-[26px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         </div>
-        <h3 class="font-bold text-white text-lg mb-3">The Solution</h3>
-        <p class="text-brand-100 text-sm leading-relaxed">WHOLECAKE provides a fully managed distribution programme — from employee registration to monthly allocations, secure product access and detailed reporting.</p>
+        <div class="text-[11px] font-bold text-brand-600 tracking-[.1em] mb-[6px]">STEP 02</div>
+        <h4 class="text-[14px] font-bold mb-[6px]">Monthly Allocation</h4>
+        <p class="text-[12.5px] text-slate-500 leading-[1.5]">A controlled monthly allocation is assigned to each employee.</p>
       </div>
-      {% else %}
-      <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-        <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mb-5">
-          <svg class="w-6 h-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
+
+      <div class="text-center px-2 sm:px-[14px] max-w-[22rem] mx-auto">
+        <div class="w-16 h-16 mx-auto mb-[18px] rounded-full bg-white border-2 border-[#eff6ff] flex items-center justify-center relative z-[2] shadow-[0_6px_18px_rgba(37,99,235,.10)]">
+          <svg class="w-[26px] h-[26px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
-        <h3 class="font-bold text-gray-900 text-lg mb-3">The Outcome</h3>
-        <p class="text-gray-500 text-sm leading-relaxed">Employers gain complete visibility into programme effectiveness. Employees experience improved dignity, comfort and workplace inclusion.</p>
+        <div class="text-[11px] font-bold text-brand-600 tracking-[.1em] mb-[6px]">STEP 03</div>
+        <h4 class="text-[14px] font-bold mb-[6px]">Secure Access</h4>
+        <p class="text-[12.5px] text-slate-500 leading-[1.5]">Products are accessed through a controlled, accountable system.</p>
       </div>
-      {% endif %}
-      {% endfor %}
+
+      <div class="text-center px-2 sm:px-[14px] max-w-[22rem] mx-auto">
+        <div class="w-16 h-16 mx-auto mb-[18px] rounded-full bg-white border-2 border-[#eff6ff] flex items-center justify-center relative z-[2] shadow-[0_6px_18px_rgba(37,99,235,.10)]">
+          <svg class="w-[26px] h-[26px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="text-[11px] font-bold text-brand-600 tracking-[.1em] mb-[6px]">STEP 04</div>
+        <h4 class="text-[14px] font-bold mb-[6px]">Usage Recorded</h4>
+        <p class="text-[12.5px] text-slate-500 leading-[1.5]">Each interaction is automatically logged in real time.</p>
+      </div>
+
+      <div class="text-center px-2 sm:px-[14px] max-w-[22rem] mx-auto">
+        <div class="w-16 h-16 mx-auto mb-[18px] rounded-full bg-white border-2 border-[#eff6ff] flex items-center justify-center relative z-[2] shadow-[0_6px_18px_rgba(37,99,235,.10)]">
+          <svg class="w-[26px] h-[26px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+        </div>
+        <div class="text-[11px] font-bold text-brand-600 tracking-[.1em] mb-[6px]">STEP 05</div>
+        <h4 class="text-[14px] font-bold mb-[6px]">Reporting Generated</h4>
+        <p class="text-[12.5px] text-slate-500 leading-[1.5]">Usage, stock and replenishment data reported to leadership.</p>
+      </div>
     </div>
 
-    <div class="text-center">
-      <a href="{% url 'wellness:index' %}" class="btn-primary text-base py-4 px-10 shadow-lg shadow-brand-900/20">
-        Explore The Solution
-        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-        </svg>
+    </div>
+  </section>
+</div>
+
+<!-- ══ WELLNESS DIVISION ═════════════════════════════════════ -->
+<section class="py-8 px-5 sm:px-6 lg:py-12 lg:px-8" id="wellness">
+  <div class="max-w-300 mx-auto">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-[72px] items-start lg:items-end mb-10 sm:mb-12 lg:mb-[52px]">
+      <div>
+        <h2 class="text-[clamp(28px,3.2vw,42px)] font-extrabold tracking-[-1.2px] leading-[1.1]">Supporting female employees through practical workplace solutions</h2>
+      </div>
+      <div>
+        <div class="flex flex-col sm:flex-row gap-3 flex-wrap justify-start lg:justify-end">
+          <a href="{% url 'wellness:index' %}#consultation"
+             class="inline-flex justify-center items-center gap-2 bg-brand-600 text-white text-[15px] font-semibold py-[9px] px-[18px] rounded-full no-underline transition-all duration-150 hover:bg-brand-700 hover:-translate-y-px">
+            Request A Consultation
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a href="#benefits"
+             class="inline-flex justify-center items-center gap-2 bg-transparent text-slate-500 text-[15px] font-medium py-[9px] px-[18px] rounded-full no-underline border border-[#e6e9ef] transition-all duration-150 hover:text-slate-900 hover:border-slate-400">
+            See Benefits
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-white border border-[#e6e9ef] rounded-[18px] overflow-hidden transition-all duration-200 hover:shadow-[0_16px_40px_rgba(15,23,42,.10)] hover:-translate-y-[3px]">
+        <div class="aspect-[16/10] overflow-hidden">
+          <img src="https://ik.imagekit.io/ek7drjowu/woman%20working.jpg" alt="Female employees at work" class="w-full h-full object-cover block">
+        </div>
+        <div class="p-[26px]">
+          <div class="w-[42px] h-[42px] bg-[#eff6ff] rounded-[11px] flex items-center justify-center mb-4">
+            <svg class="w-[21px] h-[21px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <h3 class="text-[16px] font-bold mb-[9px]">Female Employees</h3>
+          <p class="text-[14px] text-slate-500 leading-[1.65]">An unexpected need during working hours can impact comfort, confidence and productivity. Reliable, dignified access removes a daily source of stress.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#e6e9ef] rounded-[18px] overflow-hidden transition-all duration-200 hover:shadow-[0_16px_40px_rgba(15,23,42,.10)] hover:-translate-y-[3px]">
+        <div class="aspect-[16/10] overflow-hidden">
+          <img src="https://ik.imagekit.io/ek7drjowu/HR.png" alt="HR team meeting" class="w-full h-full object-cover block">
+        </div>
+        <div class="p-[26px]">
+          <div class="w-[42px] h-[42px] bg-[#eff6ff] rounded-[11px] flex items-center justify-center mb-4">
+            <svg class="w-[21px] h-[21px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <h3 class="text-[16px] font-bold mb-[9px]">HR Teams</h3>
+          <p class="text-[14px] text-slate-500 leading-[1.65]">Manual distribution is difficult to manage consistently, track or report on. Our system handles the entire process with full management visibility.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#e6e9ef] rounded-[18px] overflow-hidden transition-all duration-200 hover:shadow-[0_16px_40px_rgba(15,23,42,.10)] hover:-translate-y-[3px]">
+        <div class="aspect-[16/10] overflow-hidden">
+          <img src="https://ik.imagekit.io/ek7drjowu/employer.jpg" alt="Reporting and data" class="w-full h-full object-cover block">
+        </div>
+        <div class="p-[26px]">
+          <div class="w-[42px] h-[42px] bg-[#eff6ff] rounded-[11px] flex items-center justify-center mb-4">
+            <svg class="w-[21px] h-[21px] text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="text-[16px] font-bold mb-[9px]">Employers</h3>
+          <p class="text-[14px] text-slate-500 leading-[1.65]">Limited visibility into usage, stock levels and effectiveness makes it impossible to measure impact, report to leadership, or justify spend.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="relative -mt-8 pt-8 overflow-hidden bg-[#f7f9fc]">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute inset-0" style="background:
+      radial-gradient(circle at 16% 18%, rgba(191,219,254,.24) 0%, rgba(191,219,254,0) 30%),
+      radial-gradient(circle at 84% 72%, rgba(186,230,253,.18) 0%, rgba(186,230,253,0) 28%),
+      linear-gradient(180deg, rgba(255,255,255,.78) 0%, rgba(243,248,255,.72) 48%, rgba(247,249,252,.92) 100%);"></div>
+    <div class="absolute inset-x-0 top-0 h-20" style="background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,252,255,.96) 38%, rgba(247,249,252,0) 100%);"></div>
+    <div class="absolute inset-0 opacity-[0.28]" style="background:
+      radial-gradient(circle at center, rgba(37,99,235,.24) 0px, rgba(37,99,235,.24) 2.6px, transparent 2.6px, transparent 34px),
+      radial-gradient(circle at center, rgba(59,130,246,.14) 0px, rgba(59,130,246,.14) 1.4px, transparent 1.4px, transparent 17px);
+      background-size: 140px 140px, 70px 70px;
+      background-position: 0 0, 35px 35px;"></div>
+    <div class="absolute inset-0 opacity-[0.30]" style="background:
+      radial-gradient(circle at 70px 70px, transparent 0 24px, rgba(37,99,235,.22) 24px 26px, transparent 26px 42px, rgba(96,165,250,.16) 42px 43.5px, transparent 43.5px);
+      background-size: 140px 140px;"></div>
+    <div class="absolute inset-0 opacity-[0.16]" style="background:
+      radial-gradient(circle at 70px 70px, rgba(255,255,255,.98) 0 9px, transparent 9px);
+      background-size: 140px 140px;"></div>
+  </div>
+<section class="relative z-[1] py-12 px-5 sm:px-6 lg:py-16 lg:px-8 bg-transparent" id="benefits">
+  <div class="max-w-300 mx-auto">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-[72px] items-start lg:items-end mb-10 sm:mb-12 lg:mb-[52px]">
+      <div>
+        <h2 class="text-[clamp(28px,3.2vw,42px)] font-extrabold tracking-[-1.2px] leading-[1.1]">Quality products in every wellness pack</h2>
+      </div>
+      <p class="text-[17px] text-slate-500 leading-[1.7]">The pack experience matters as much as the programme itself. We use practical, dependable essentials selected for comfort, hygiene and confident everyday use in the workplace.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="border border-[rgba(214,226,243,.9)] rounded-[20px] px-6 sm:px-8 py-8 sm:py-9 shadow-[0_10px_30px_rgba(15,23,42,.04)]" style="background:rgba(255,255,255,.46);">
+        <div class="h-[160px] sm:h-[180px] flex items-center justify-center mb-6">
+          <img src="https://ik.imagekit.io/ek7drjowu/pad%20(1).png" alt="Pad product in wellness pack" class="max-h-full max-w-full object-contain block">
+        </div>
+        <h3 class="text-[20px] font-bold tracking-[-0.3px] mb-[10px]">Pads</h3>
+        <p class="text-[14px] text-slate-500 leading-[1.7]">Reliable, comfortable protection chosen to support confidence throughout the workday. We prioritise products employees can trust when they need them most.</p>
+      </div>
+
+      <div class="border border-[rgba(214,226,243,.9)] rounded-[20px] px-6 sm:px-8 py-8 sm:py-9 shadow-[0_10px_30px_rgba(15,23,42,.04)]" style="background:rgba(255,255,255,.46);">
+        <div class="h-[160px] sm:h-[180px] flex items-center justify-center mb-6">
+          <img src="https://ik.imagekit.io/ek7drjowu/liner%20(1).png" alt="Liner product in wellness pack" class="max-h-full max-w-full object-contain block">
+        </div>
+        <h3 class="text-[20px] font-bold tracking-[-0.3px] mb-[10px]">Liners</h3>
+        <p class="text-[14px] text-slate-500 leading-[1.7]">Light, practical essentials that help employees stay fresh, prepared and comfortable. They complement the pack with everyday usability, not filler.</p>
+      </div>
+
+      <div class="border border-[rgba(214,226,243,.9)] rounded-[20px] px-6 sm:px-8 py-8 sm:py-9 shadow-[0_10px_30px_rgba(15,23,42,.04)]" style="background:rgba(255,255,255,.46);">
+        <div class="h-[160px] sm:h-[180px] flex items-center justify-center mb-6">
+          <img src="https://ik.imagekit.io/ek7drjowu/wipes%20(1).png" alt="Wipes product in wellness pack" class="max-h-full max-w-full object-contain block">
+        </div>
+        <h3 class="text-[20px] font-bold tracking-[-0.3px] mb-[10px]">Wipes</h3>
+        <p class="text-[14px] text-slate-500 leading-[1.7]">A hygiene-focused addition that makes the pack feel complete and genuinely useful. Every item is there for a reason and chosen with care.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA STRIP ═════════════════════════════════════════════ -->
+<div class="relative z-[1] px-5 pb-12 sm:px-6 lg:px-8 lg:pb-16">
+  <div class="max-w-300 mx-auto bg-[#0a0f1e] rounded-[24px] relative overflow-hidden text-center py-9 px-5 sm:px-8 lg:py-12 lg:px-14">
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_100%_at_80%_0%,rgba(124,58,237,.5),rgba(37,99,235,.35)_40%,transparent_70%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_72%_48%,rgba(255,255,255,.06),transparent_32%)]"></div>
+    <img src="https://ik.imagekit.io/ek7drjowu/logo%20dark.png?updatedAt=1781034801191"
+         alt=""
+         aria-hidden="true"
+         class="absolute right-[-14%] sm:right-[-6%] lg:right-[-2%] top-1/2 w-[18rem] sm:w-[24rem] lg:w-[30rem] max-w-[88%] sm:max-w-[82%] lg:max-w-[78%] -translate-y-1/2 opacity-[0.18] saturate-0 contrast-[1.25] brightness-[2.1] mix-blend-soft-light pointer-events-none select-none">
+    <div class="relative z-[2]">
+      <h2 class="text-white text-[clamp(26px,3vw,38px)] font-extrabold tracking-[-1px] mb-[14px]">Ready to support your female workforce?</h2>
+      <p class="text-white/60 text-[16px] sm:text-[17px] max-w-[520px] mx-auto mb-[24px] sm:mb-[30px]">Book a consultation and we'll walk you through how a managed programme would work for your organisation.</p>
+      <a href="{% url 'wellness:index' %}#consultation"
+         class="inline-flex justify-center items-center gap-2 bg-brand-600 text-white text-[15px] font-semibold py-[9px] px-[18px] rounded-full no-underline transition-all duration-150 hover:bg-brand-700 hover:-translate-y-px">
+        Request A Consultation
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
     </div>
   </div>
-</section>
+</div>
+</div>
 
-<!-- ─── CONTACT ───────────────────────────────────────────────────────── -->
-<section id="contact" class="py-20 lg:py-28">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-
-      <!-- Contact info -->
-      <div>
-        <span class="section-label">Get In Touch</span>
-        <h2 class="section-heading mb-5">Let's Start A Conversation</h2>
-        <p class="section-subheading mb-10">
-          Ready to support your female employees? Reach out to discuss your requirements
-          or request a full consultation.
-        </p>
-
-        <div class="space-y-6">
-          <div class="flex items-start gap-4">
-            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
-              </svg>
-            </div>
-            <div>
-              <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Email</div>
-              <a href="mailto:{{ SITE_EMAIL }}" class="text-gray-900 font-medium hover:text-brand-700 transition-colors">
-                {{ SITE_EMAIL }}
-              </a>
-            </div>
-          </div>
-
-          {% if SITE_PHONE %}
-          <div class="flex items-start gap-4">
-            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Phone</div>
-              <a href="tel:{{ SITE_PHONE }}" class="text-gray-900 font-medium hover:text-brand-700 transition-colors">
-                {{ SITE_PHONE }}
-              </a>
-            </div>
-          </div>
-          {% endif %}
-
-          <div class="flex items-start gap-4">
-            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Location</div>
-              <span class="text-gray-900 font-medium">South Africa</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-10 p-6 bg-brand-50 rounded-2xl border border-brand-100">
-          <p class="text-sm text-brand-800 font-medium">
-            Looking for a full consultation? Visit our
-            <a href="{% url 'wellness:index' %}#consultation" class="underline hover:text-brand-900">
-              Wellness Division page
-            </a>
-            to submit a detailed consultation request.
-          </p>
-        </div>
-      </div>
-
-      <!-- Contact form -->
-      <div>
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
-          <h3 class="text-xl font-bold text-gray-900 mb-6">Send Us A Message</h3>
-          <form method="post" action="{% url 'core:home' %}#contact" novalidate>
-            {% csrf_token %}
-            {{ contact_form.website_url }}
-            <div class="space-y-5">
-
-              <div>
-                <label for="{{ contact_form.name.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
-                  Full Name <span class="text-red-500">*</span>
-                </label>
-                {{ contact_form.name }}
-                {% if contact_form.name.errors %}
-                <p class="mt-1.5 text-sm text-red-500">{{ contact_form.name.errors.0 }}</p>
-                {% endif %}
-              </div>
-
-              <div>
-                <label for="{{ contact_form.email.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
-                  Email Address <span class="text-red-500">*</span>
-                </label>
-                {{ contact_form.email }}
-                {% if contact_form.email.errors %}
-                <p class="mt-1.5 text-sm text-red-500">{{ contact_form.email.errors.0 }}</p>
-                {% endif %}
-              </div>
-
-              <div>
-                <label for="{{ contact_form.phone.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                {{ contact_form.phone }}
-              </div>
-
-              <div>
-                <label for="{{ contact_form.message.id_for_label }}" class="block text-sm font-semibold text-gray-700 mb-2">
-                  Message <span class="text-red-500">*</span>
-                </label>
-                {{ contact_form.message }}
-                {% if contact_form.message.errors %}
-                <p class="mt-1.5 text-sm text-red-500">{{ contact_form.message.errors.0 }}</p>
-                {% endif %}
-              </div>
-
-            </div>
-            <button type="submit" class="btn-primary w-full mt-6 py-3.5 text-sm">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 {% endblock %}

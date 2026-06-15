@@ -1,15 +1,16 @@
 {% load static %}
-<footer class="bg-gray-900 text-gray-400">
+<footer id="contact" class="bg-gray-900 text-gray-400">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
 
       <!-- Brand -->
       <div class="lg:col-span-2">
-        <div class="flex items-baseline gap-2 mb-4">
-          <span class="text-xl font-black text-white tracking-tight">WHOLECAKE</span>
-          <span class="text-xs font-semibold text-gray-500 tracking-widest uppercase">GROUP</span>
-        </div>
+        <a href="{% url 'core:home' %}" class="inline-block mb-4">
+          <img src="https://ik.imagekit.io/ek7drjowu/ChatGPT%20Image%20Jun%209,%202026,%2008_31_03%20PM.png?updatedAt=1781032683416"
+               alt="Wholecake Group"
+               class="h-20 w-auto block">
+        </a>
         <p class="text-sm leading-relaxed max-w-sm">
           Providing managed female employee wellness solutions for South African workplaces.
           Supporting dignity, wellbeing and workplace inclusion.
